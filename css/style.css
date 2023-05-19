@@ -1,0 +1,458 @@
+* {
+    max-width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    color: #6A686E;
+}
+
+h1 {
+    max-width: 532px;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #C51417;
+}
+
+h2 {
+    position: relative;
+    width: fit-content;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 60px;
+    display: block;
+    background-color: #C51417;
+    bottom: -16px;
+    top: 130%;
+}
+
+h2.linha-direita::before {
+    right: 0;
+}
+
+h2.linha-centro::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    gap: 16px;
+
+    background: linear-gradient(246.03deg, #DB0F0F -161.72%, #FFA800 84.64%);
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    padding: 16px 48px;
+    max-width: 284px;
+    height: 56px;
+}
+
+hr {
+    margin-top: 32px;
+    color: white;
+}
+
+header {
+    /* height: 91px; */
+    margin: auto;
+    max-width: 1918px;
+}
+
+nav {
+    height: 91px;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+    background: white;
+}
+
+.logo {
+    filter: drop-shadow(0px 3.18229px 3.18229px rgba(0, 0, 0, 0.25));
+}
+
+.collapsibleNavbar {
+    justify-content: flex-end;
+}
+
+.collapsibleNavbar ul li a {
+    color: #6A686E;
+}
+
+.collapsibleNavbar a {
+    padding: 32px 10px;
+}
+
+.collapsibleNavbar a:hover,
+.collapsibleNavbar a:focus,
+.collapsibleNavbar .active,
+.collapsibleNavbar .active a:hover {
+    font-weight: 700;
+    color: #A22A29;
+    border-bottom: 3px solid #C51417;
+}
+
+.collapsibleNavbar li:focus {
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid #C51417;
+}
+
+.banner {
+    min-height: 590px;
+    background-image: url(../img/Herobanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.banner .container {
+    padding-top: 67px;
+}
+
+.banner img {
+    width: 32px;
+    height: 32px;
+}
+
+.banner h6 {
+    padding: 2px 0 4px 0;
+}
+
+.banner button {
+    max-width: 318px;
+    background: linear-gradient(230.53deg, #DB0F0F -46.41%, #E2990A 92.84%);
+}
+
+.banner p,
+.banner h6,
+.premio h1,
+.premio p,
+.premio h6,
+.download p {
+    margin: 0;
+    color: white;
+}
+
+.premio h1 {
+    font-size: 56px;
+    line-height: 108%;
+}
+
+.premio p {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.premio li div {
+    flex-direction: column;
+}
+
+.premioul {
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 52px
+}
+
+.vencedores .row {
+    justify-content: center;
+    padding: 32px;
+    align-items: center;
+    max-width: 954px;
+}
+
+.vencedores h3 {
+    text-align: start;
+    font-size: 24px;
+    line-height: 137.5%;
+}
+
+.download {
+    height: 88px;
+    background: linear-gradient(102.18deg, #351377 17.75%, #A22A29 62.35%, #C51417 108.77%, #ED6E0B 158.83%, #FFD213 192.51%);
+    border-radius: 0px;
+}
+
+.download button {
+    border: 1.5px solid #FFFFFF;
+    max-width: 418px;
+    background: none;
+}
+
+.sobrePremio {
+    max-height: 610px;
+}
+
+.sobrePremio p {
+    max-width: 492px;
+    line-height: 150%;
+}
+
+.sobrePremio h6,
+h3 {
+    font-size: 14px;
+    line-height: 150%;
+    color: #1F287E;
+}
+
+.risco img {
+    max-width: 60px;
+}
+
+.sobrePremio button {
+    max-width: 318px;
+}
+
+.participar {
+    background-color: #FBFBFB;
+}
+
+.participar button {
+    max-width: 356px;
+    height: 56px;
+    background: linear-gradient(246.03deg, #DB0F0F -161.72%, #FFA800 84.64%);
+}
+
+.support {
+    overflow-x: auto;
+}
+
+.support_imgs {
+    mix-blend-mode: multiply;
+}
+
+.fundoFooter {
+    background: linear-gradient(231.17deg, #380C5B 19.34%, #1F287E 92.52%);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.carousel-indicators button {
+    background: white;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.fundoFooter h6,
+.fundoFooter p,
+.footerMenu a {
+    color: white;
+}
+
+.footerLogo p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footerMenu a {
+    font-size: 16px;
+}
+
+.footerPartners h6 {
+    font-size: 10px;
+}
+
+.footerPartners p {
+    font-size: 7px;
+}
+
+.rights,
+.rights strong {
+    font-size: 16px;
+}
+
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)
+Sem media query para `xs`, já que este é o padrão, no Bootstrap.
+
+
+/* Dispositivos médios (tablets com 768px ou menos) */
+@media (max-width: 768px) {
+
+    h2 {
+        margin: auto;
+    }
+
+    h2.linha-esquerda::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .collapsibleNavbar .active,
+    .collapsibleNavbar .active a:hover {
+        padding-bottom: 8px;
+    }
+
+    .banner .container {
+        padding-top: 23px;
+    }
+
+    .premio {
+        align-items: center;
+    }
+
+    .premio div {
+        align-items: center;
+    }
+
+    .premio h1 {
+        max-width: 384px;
+        margin-bottom: 5px;
+    }
+
+    .premio ul {
+        padding: 0;
+        max-width: 180px;
+    }
+
+    .premio ul li div {
+        flex-direction: row;
+    }
+
+    .premio h1,
+    .premio p,
+    .sobrePremio h2 {
+        text-align: center;
+    }
+
+    .premio p {
+        max-width: 304px;
+    }
+
+    .premio button {
+        margin: auto;
+    }
+
+    .spremio,
+    .spremio button {
+        justify-content: center
+    }
+
+    .premioul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 736px;
+    }
+
+    .collapsibleNavbar ul {
+        padding-top: 40px;
+        padding-left: 18px;
+        background-color: #f8f9fa;
+        height: 745px;
+    }
+
+    .collapsibleNavbar ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .collapsibleNavbar li {
+        height: 58px;
+        padding: 16px 9px;
+    }
+
+    .collapsibleNavbar a {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .collapsibleNavbar li:hover,
+    .collapsibleNavbar li:focus {
+        text-align: left;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    .collapsibleNavbar ul a {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 0;
+    }
+
+    .collapsibleNavbar li a:hover,
+    .collapsibleNavbar li a:focus {
+        padding-bottom: 8px;
+        border-bottom: 3px solid hsl(359, 82%, 43%);
+    }
+
+    .scroll_button {
+        z-index: 1;
+        left: 300px;
+        top: 750px;
+        color: #2a6496;
+        text-decoration: underline;
+    }
+
+    .scroll_button img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .sobrePremio p {
+        max-width: 400px;
+        padding: 0 18px 0 25px;
+    }
+
+    .sobrePremio div,
+    .sobrePremio button {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .sobrePremio .d-flex {
+        align-items: center;
+    }
+
+    .txt_mobile {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .img_footer {
+        justify-content: start;
+        margin-left: 15px;
+    }
+
+    .iniciativa {
+        margin: 64px 0 20px 15px;
+    }
+
+    .realizacao3 {
+        margin-top: 50px;
+    }
+}
